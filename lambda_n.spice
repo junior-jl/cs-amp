@@ -1,0 +1,43 @@
+*ID X VDS PLOT TO FIND LAMBDA (N FET)
+*AUTHOR: JOSE LIRA JR
+
+.include	./minimal_libs/nshort.lib
+
+* MNAME ND NG NS NB MODNAME L W
+M1 1 2 0 0 nshort_model.0 L=1u W=100u
+
+*DRAIN VOLTAGE (VALUE DOESN'T MATTER -> DC SWEEP)
+V1 1 0 DC 3V
+*GATE SOURCE VOLTAGE
+VGS 2 0 DC 1V
+
+.dc V1 0 3 10m
+.end
+
+.control
+
+destroy all
+run
+
+let id = -I(V1)
+let vds = V(1)
+plot id xlabel 'Vds' ylabel 'Id' title 'Caracteristica Id x Vds'
+
+meas dc id_1 find id at=1.7
+meas dc id_2 find id at=1.8
+
+*ro (rds) is 1/slope of the curve
+let ro = (1.7-1.8)/(id_1-id_2)
+print ro
+
+*a is the slope
+let a = 1/ro
+print a
+
+*lambda approximation
+let lambda = a/(id_2 - a*1.8)
+print lambda
+
+.endc
+
+
