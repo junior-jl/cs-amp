@@ -1,0 +1,30 @@
+*Testbench cs-amp
+
+.include	./cs_amp.spice
+
+*.SUBCKT cs_amp VD VGND V1 IN OUT
+XAMP1	VDD	0	V1	IN	OUT	CS_AMP
+ 
+
+VDD	VDD	0	1.8
+VIN	IN	0	sin(0.8 0.1 800k)
+Ibias	V1	0	326.557uA
+Cl	OUT	0	7pF
+
+
+*.dc	VIN	0	1.8	10m
+.tran 	0.1u 	500u 	1n
+
+.end
+
+.control
+
+run
+
+meas dc in_1 find in at=145u
+meas dc out_1 find out at=145u
+print out_1/in_1
+plot out in title 'Vout x Vin' xlabel 'Vin' ylabel 'Vout'
+
+.endc
+
