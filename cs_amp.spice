@@ -9,6 +9,6 @@
 
 M1 OUT IN VGND VGND nshort_model.0 L=1u W=69.985u
 M2 OUT V1 VD VD pshort_model.0 L=1u W=818.923u
-M3 V1 V1 VD VD pshort_model.0 L=818.923u
+M3 V1 V1 VD VD pshort_model.0 L=1u W=818.923u
 
 .ENDS
