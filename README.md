@@ -21,7 +21,7 @@ The design process will be as follows:
 | --- | --- |
 | DC Gain | $\geq 40$ dB ($\geq 100$)|
 | Output voltage swing | 0.2 to 1.6 V |
-| Load capacitance | 4 pF |
+| Load capacitance | 7 pF |
 | Unity gain bandwidth | 80 MHz |
 
 ## Technology parameters
