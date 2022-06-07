@@ -7,23 +7,28 @@ XAMP1	VDD	0	V1	IN	OUT	CS_AMP
  
 
 VDD	VDD	0	1.8
-VIN	IN	0	sin(0.8 0.1 800k)
+VIN	IN	0	1.8
+*VIN	IN	0	sin(0.694 0.005 800k)
+*VIN	IN 	0	0.694	AC	1
 Ibias	V1	0	326.557uA
 Cl	OUT	0	7pF
 
 
-*.dc	VIN	0	1.8	10m
-.tran 	0.1u 	500u 	1n
-
+.dc	VIN	0	1.8	10m
+*tran 	0.1u 	20u 	1n
+*.ac dec 200 1000 150Meg 
 .end
 
 .control
 
 run
+*let gain=db(-out/in)
 
-meas dc in_1 find in at=145u
-meas dc out_1 find out at=145u
-print out_1/in_1
+*meas dc in_1 find in at=15u
+*meas dc out_1 find out at=15u
+
+*print out_1/in_1
+*plot gain 
 plot out in title 'Vout x Vin' xlabel 'Vin' ylabel 'Vout'
 
 .endc
