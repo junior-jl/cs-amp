@@ -41,3 +41,19 @@ For the pMOS:
 $$C_{ox} = \epsilon_0 \cdot \frac{\epsilon_{rox}}{t_{ox}} = 8.163\cdot 10^{-3} \frac{F}{m^2}$$
 For the nMOS:
 $$C_{ox} = 8.325\cdot 10^{-3} \frac{F}{m^2} $$
+
+Using 'lambda_n.spice' and 'lambda_p.spice', we found
+$$ \lambda_n = 0.038052 \ \frac{1}{V}$$
+$$ \lambda_p = 0.069696 \ \frac{1}{V}$$
+
+Now, in order to find the output resistance that meet the frequency response requirements, we can use $f_{u} = \frac{GBW}{Av}$, where $f_u$ is the unity gain bandwidth. So,
+
+$$ R_o = \frac{1}{2\pi \cdot f_{pole} \cdot C_L} = 28.421 \ k\Omega$$
+
+With this, we can find $I_{bias}$,
+
+$$ I_{bias} = \frac{1}{(\lambda_n + \lambda_p)R_o} = 326.557 \ \mu A $$
+
+And to satisfy the $V_{outmax}$ of the project parameters, the drain-source voltage of $M_2$ ($V_{DS2}$) must be 0.2 V ($V_{DD} - V_{outmax}$). Thus, the aspect ratio of $M_2$ is 
+
+$$ (\frac{W}{L})_2 = \frac{2 \cdot I_{bias}}{\mu_{0p} \cdot C_{oxp} \cdot V_{DS2}^2} = 818.923 $$
