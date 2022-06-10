@@ -90,4 +90,13 @@ Finally, the transient analysis to see the behaviour of the amplifier with a sma
 <img src = "https://user-images.githubusercontent.com/69206952/172964350-71734930-486e-40a3-b2f8-2ed5c96ea85f.PNG" width = "500" height = "500">
 </p>
 
+## Operation parameters
 
+The table below summarizes the parameters obtained in the design before layout.
+
+| Parameter | Value |
+| --- | --- |
+| DC Gain | 36.3636 dB (65.793 V/V)|
+| Operation point | 0.713 V |
+| Cutoff frequency | 1 MHz |
+| Unity gain bandwidth | 67.153 MHz |
