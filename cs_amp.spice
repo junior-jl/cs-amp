@@ -1,0 +1,14 @@
+*COMMON SOURCE AMPLIFIER MOSFET
+*AUTHOR: JOSE LIRA JR
+
+.include	./minimal_libs/nshort.lib
+.include        ./minimal_libs/pshort.lib
+
+.SUBCKT cs_amp VD VGND V1 IN OUT
+* MNAME ND NG NS NB MODNAME L W
+
+M1 OUT IN VGND VGND nshort_model.0 L=1u W=69.985u
+M2 OUT V1 VD VD pshort_model.0 L=1u W=818.923u
+M3 V1 V1 VD VD pshort_model.0 L=1u W=818.923u
+
+.ENDS

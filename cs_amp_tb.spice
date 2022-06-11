@@ -1,34 +1,33 @@
 *Testbench cs-amp
 
-.include	./cs_amp.spice
+*.include	./cs_amp.spice
+.include ./cs_amp_post_layout.spice
 
-*.SUBCKT cs_amp VD VGND V1 IN OUT
-XAMP1	VDD	0	V1	IN	OUT	CS_AMP
- 
+***.SUBCKT cs_amp VD VGND V1 IN OUT
+***XAMP1	VDD	0	V1	IN	OUT	CS_AMP
+***.subckt csamp GND Ibias IN OUT VDD 
+XAMP2	GND	Ibias	IN	OUT	VDD	CSAMP
 
-VDD	VDD	0	1.8
-VIN	IN	0	1.8
-*VIN	IN	0	sin(0.694 0.005 800k)
-*VIN	IN 	0	0.694	AC	1
-Ibias	V1	0	326.557uA
-Cl	OUT	0	7pF
+VDD	VDD	GND	1.8
+*VIN	IN	0	1.8
+VIN	IN	GND	sin(0.731 0.01 120k)
+*VIN	IN 	GND	0.7313	AC	1
+Ibias	Ibias	GND	326.557uA
+Cl	OUT	GND	7pF
 
 
-.dc	VIN	0	1.8	10m
-*tran 	0.1u 	20u 	1n
+*.dc	VIN	0	1.8	10m
+.tran 	0.1u 	20u 	1n
 *.ac dec 200 1000 150Meg 
 .end
 
 .control
 
 run
-*let gain=db(-out/in)
+let gain=db(-out/in)
 
-*meas dc in_1 find in at=15u
-*meas dc out_1 find out at=15u
 
-*print out_1/in_1
-*plot gain 
+*plot gain 33.1818
 plot out in title 'Vout x Vin' xlabel 'Vin' ylabel 'Vout'
 
 .endc
