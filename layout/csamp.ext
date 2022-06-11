@@ -1,0 +1,73 @@
+timestamp 1654898173
+version 8.3
+tech sky130A
+style ngspice(lvs)
+scale 1000 1 1e+06
+resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29
+port "IN" 2 -124 7101 118 7343 li
+port "OUT" 3 1338 7404 1706 7849 v0
+port "Ibias" 1 -1214 13192 -765 13892 li
+port "VDD" 4 9902 13171 10404 13557 li
+port "GND" 0 2322 5600 2462 5800 v0
+node "IN" 4003 7530.32 -124 7101 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 905100 17522 0 0 88500 1190 0 0 0 0 0 0 0 0 0 0
+node "OUT" 2545 34163.6 1338 7404 v0 0 0 0 0 0 0 0 0 901908 8670 12000000 68000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6961375 105290 341875 2344 0 0 0 0 0 0 0 0
+node "Ibias" 339 176274 -1214 13192 li 0 0 0 0 0 0 0 0 0 0 12000000 68000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20818965 357390 0 0 4972371 87178 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2711 995537 9902 13171 li 0 0 0 0 77507166 59880 0 0 219538 2682 27000000 150000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14685103 208382 287076 2146 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 2322 5600 v0 0 0 0 0 0 0 0 0 948435 8748 79500 1130 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1219375 15868 57772 976 0 0 0 0 0 0 0 0
+cap "OUT" "VDD" 925
+cap "IN" "OUT" 106.134
+cap "Ibias" "VDD" 12463.2
+device mosfet nshort 1649 5851 1650 5852 100 1193 "GND" "IN" 200 0 "GND" 1193 0 "OUT" 1193 0
+device mosfet nshort 1249 5851 1250 5852 100 1193 "GND" "IN" 200 0 "OUT" 1193 0 "GND" 1193 0
+device mosfet nshort 849 5851 850 5852 100 1193 "GND" "IN" 200 0 "GND" 1193 0 "OUT" 1193 0
+device mosfet nshort 449 5851 450 5852 100 1193 "GND" "IN" 200 0 "OUT" 1193 0 "GND" 1193 0
+device mosfet nshort 49 5851 50 5852 100 1193 "GND" "IN" 200 0 "GND" 1193 0 "OUT" 1193 0
+device mosfet pshort 9509 9012 9510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 9009 9012 9010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 8509 9012 8510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 8009 9012 8010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 7509 9012 7510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 7009 9012 7010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 6509 9012 6510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 6009 9012 6010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 5509 9012 5510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 5009 9012 5010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 4509 9012 4510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 4009 9012 4010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 3509 9012 3510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 3009 9012 3010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 2509 9012 2510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 2009 9012 2010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 1509 9012 1510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 1009 9012 1010 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 509 9012 510 9013 100 3000 "VDD" "Ibias" 200 0 "OUT" 3000 0 "VDD" 3000 0
+device mosfet pshort 9 9012 10 9013 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "OUT" 3000 0
+device mosfet pshort 9489 14707 9490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 8989 14707 8990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 8489 14707 8490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 7989 14707 7990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 7489 14707 7490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 6989 14707 6990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 6489 14707 6490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 5989 14707 5990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 5489 14707 5490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 4989 14707 4990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 4489 14707 4490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 3989 14707 3990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 3489 14707 3490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 2989 14707 2990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 2489 14707 2490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 1989 14707 1990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 1489 14707 1490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort 989 14707 990 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+device mosfet pshort 489 14707 490 14708 100 3000 "VDD" "Ibias" 200 0 "Ibias" 3000 0 "VDD" 3000 0
+device mosfet pshort -11 14707 -10 14708 100 3000 "VDD" "Ibias" 200 0 "VDD" 3000 0 "Ibias" 3000 0
+subcap "GND" -6615.87
+subcap "IN" -5844.74
+subcap "OUT" -33637.5
+subcap "OUT" -33502.9
+subcap "VDD" -995470
+subcap "VDD" -995059
+subcap "Ibias" -170936
+subcap "VDD" -995069
+subcap "VDD" -994171

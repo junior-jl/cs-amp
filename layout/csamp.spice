@@ -1,0 +1,98 @@
+* SPICE3 file created from csamp.ext - technology: sky130A
+
+.option scale=0.01u
+
+.subckt csamp GND Ibias IN OUT VDD
+M1000 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=2.7e+19 pd=1.5e+11 as=1.2e+19 ps=6.8e+10
+M1001 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=1.2e+19 pd=6.8e+10 as=0 ps=0
+M1002 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1003 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1004 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1005 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1006 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1007 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1008 OUT IN GND GND nshort w=1.193e+09 l=1e+08
++  ad=9.01908e+17 pd=8.67e+09 as=9.48435e+17 ps=8.748e+09
+M1009 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1010 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1011 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1012 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1013 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1014 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1015 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1016 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1017 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1018 GND IN OUT GND nshort w=1.193e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1019 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1020 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1021 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1022 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1023 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1024 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1025 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1026 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1027 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1028 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1029 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1030 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1031 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1032 OUT IN GND GND nshort w=1.193e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1033 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1034 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1035 OUT IN GND GND nshort w=1.193e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1036 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1037 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1038 GND IN OUT GND nshort w=1.193e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1039 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1040 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1041 VDD Ibias OUT VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1042 VDD Ibias Ibias VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1043 Ibias Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+M1044 OUT Ibias VDD VDD pshort w=3e+09 l=1e+08
++  ad=0 pd=0 as=0 ps=0
+C0 Ibias VDD 12.46fF
+C1 Ibias GND 5.34fF
+.ends
