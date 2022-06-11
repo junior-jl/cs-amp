@@ -115,7 +115,7 @@ To use sky130 technology in MAGIC, we execute the software with the following li
 magic -T sky130A.tech
 ```
 
-Note that if the 'sky130A.tech' file is on a differente directory we would have to do
+Note that if the 'sky130A.tech' file is on a different directory we would have to do
 
 ```
 magic -T ./directory/sky130A.tech
