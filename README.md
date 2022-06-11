@@ -148,3 +148,29 @@ ext2spice
 The file is 'cs_amp_post_layout'. To be fair, the original file did not have the 'include' directives, nor the 'pshort_model.0' and 'nshort_model.0', instead it had 'pshort' and 'nshort', so this change was made to make it right.
 
 Since it was used ports in MAGIC, it creates the SPICE file as a subckt. And it's worth noting that the ports sequence was different from the one used in the pre-layout SPICE file, so the testbench had a slight adjustment.
+
+## SPICE Simulation post-layout
+
+The DC simulation is shown in the following figure.
+
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/69206952/173200336-a632e89a-82c7-4887-b2e6-0c21b091480a.png" width = "500" height = "500">
+</p>
+
+
+Here, we found a minor difference. The operation voltage was 0.713V and now it is 0.731V. Hence, using this voltage, we have the AC analysis.
+
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/69206952/173200536-fc3de064-09e6-43bd-b7d5-4c4f87e6b4ee.png" width = "500" height = "500">
+</p>
+
+The maximum DC gain is 36.1818 dB to frequencies under 151.513 kHz. The cutoff frequency obtained is 897.411 kHz (less than the expected, but closer to the specified one). The unity gain frequency is 56.89 MHz.
+
+Lastly, the transient analysis.
+
+<p align="center">
+<img src = "https://user-images.githubusercontent.com/69206952/173200693-a63e7b86-e3f5-4aca-8c5e-c79885de666d.png" width = "500" height = "500">
+</p>
+
+We can conclude that the results collected were tolerable and the SPICE simulations before and after the layout were very similar.
+
