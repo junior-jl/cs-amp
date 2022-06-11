@@ -2,8 +2,14 @@
 
 Design of a common source amplifier with active load using the skywater 130nm technology.
 
-The following figure shows the schematic of the circuit.
-![image](https://user-images.githubusercontent.com/69206952/171064487-d78850cd-36fb-489b-a805-8b6f81ff6feb.png)
+The following figures show the schematic of the circuit and the layout in MAGIC VLSI.
+
+
+<img src = "https://user-images.githubusercontent.com/69206952/171064487-d78850cd-36fb-489b-a805-8b6f81ff6feb.png" width = "300" height = "300"> <img src = "https://user-images.githubusercontent.com/69206952/173199602-09cda835-e678-4fa4-95f8-1e74c72b82cd.png" width = "300" height = "300">
+
+
+
+
 
 The design process will be as follows:
 
